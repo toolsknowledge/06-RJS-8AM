@@ -117,6 +117,7 @@
 
 
 
+<!--
 <script>
     function fun_one(param1,param2="Hello_2",...param3){
         console.log( param1, param2, param3 );
@@ -128,6 +129,173 @@
     fun_one(null,null,null);                        //null null [null]
     fun_one("Hello_1",undefined,"Hello_3","Hello_4");   //Hello_1 Hello_2 (2) ['Hello_3', 'Hello_4']
 </script>
+-->
+
+
+<!--
+    anonymous functions
+    *******************
+        - The function "without" name called as "anonymous" function
+
+        - anonymous functions also called as "arrow" functions
+
+        - arrow functions introduced in "ES6"
+
+        - we will represent arrow functions with "=>"
+
+        - arrow functions also called as "callback" functions
+
+    syntax
+    ******
+    1) function definition
+
+    2) function calling
+
+    function definition
+    *******************
+    var/let/const variablename = (param1,param2,param3,....paramn)=>{
+        //business logic
+    }
+
+    function calliing
+    *****************
+    variablename(arg1,arg2,arg3,.....argn);
+-->
+
+<!--
+<script>
+   let fun_one = ()=>{
+       return "welcome to arrow functions";
+   }
+   
+   console.log( fun_one() );                //welcome to arrow functions
+</script>
+-->
+
+<!--
+<script>
+    let fun_one = ()=>{
+        return "hello";
+    }
+
+    console.log( fun_one );                 //def
+
+</script>
+-->
+
+<!--
+<script>
+    let fun_one = (param1,param2,param3)=>{
+        console.log( param1, param2, param3 );
+    }
+
+    fun_one();                                  //undefined undefined undefined
+    fun_one("Hello_1","Hello_2","Hello_3");     //Hello_1 Hello_2 Hello_3
+    fun_one(null,null,null);                    //null null null
+    fun_one(undefined,"Hello_2");               //undefined 'Hello_2' undefined
+</script>
+-->
+
+
+<!--
+<script>
+    let fun_one = param1=>console.log(param1);
+    fun_one();          //undefined
+    fun_one("Hello_1"); //Hello_1
+    fun_one(null);      //null
+</script>
+-->
+
+
+<!--
+<script>
+    let network_call = (successCallBack,errorCallBack)=>{
+        console.log( successCallBack(), errorCallBack() );
+    }
+
+    network_call( ()=>{ return "Success" }, ()=>{ return "Error" } );
+    //Success Error
+</script>
+-->
+
+
+<!--
+<script>
+    let fun_one = (param1, param2="Hello_2",...param3)=>{
+        console.log( param1, param2, param3 );  
+    }
+    fun_one();                                       //undefined 'Hello_2' []
+    fun_one("Hello_1");                              //Hello_1 Hello_2 []
+    fun_one("Hello_1",undefined,"Hello_3");          //Hello_1 Hello_2 ['Hello_3']
+    fun_one("Hello_1",undefined,"Hello_3","Hello_4");//Hello_1 Hello_2  ['Hello_3', 'Hello_4']
+    fun_one(undefined,undefined,undefined);          //undefined 'Hello_2' [undefined]
+    fun_one(null,null,null);                         //null null [null]
+</script>
+-->
+
+
+<!--
+    generator functions
+    *******************
+        - generator function controls the flow of execution.
+
+        - generator functions prefix with "*"
+
+        - generator function returns cursor mechanism
+
+        - by using above cursor mechanism, we can control flow of execution.
+
+        - the default position of cursor mechanism is above first record (first statement)
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
