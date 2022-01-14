@@ -248,6 +248,67 @@
         - the default position of cursor mechanism is above first record (first statement)
 -->
 
+<!--
+<script>
+    function *fun_one(){
+        yield "Hello_1";
+        yield "Hello_2";
+        yield "Hello_3";
+        yield "Hello_4";
+        yield "Hello_5";
+    }
+    let cursor = fun_one();
+    console.log( cursor.next() );
+    console.log( cursor.next() );
+    console.log( cursor.next() );
+    console.log( cursor.next() );
+    console.log( cursor.next() );
+    console.log( cursor.next() );
+</script>
+-->
+
+
+<script>
+    function *fun_one(){
+        yield "Hello_1";
+        yield *fun_three();
+        yield *fun_two();
+    }
+
+    function *fun_two(){
+        yield "Hello_2";
+    }
+
+    function *fun_three(){
+        yield "Hello_3";
+    }
+
+    let cursor = fun_one();
+    for(let i=0;i<3;i++){
+        console.log( cursor.next() );
+    }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
