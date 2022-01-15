@@ -1,0 +1,319 @@
+<!--
+    JSON
+    ****
+        JSON stands for java script object notation
+
+        JSON also called as JavaScript Objects
+
+        JSON, used to transfer the data over the Network
+
+        JSON is "light" weight
+
+        Parsing(Reading) of JSON Eazy.
+    Syntax
+    ++++++
+    1) Objects ---    {}
+
+    2) Arrays  ---    []
+
+    3) data    ---    key & value pairs
+
+                    key & value separated by using ":"
+
+                    key & value "pairs" separated by using ","
+-->
+
+<!--
+<script>
+    let obj = {
+        "sub_one" : "ReactJS",
+        "sub_two" : "NodeJS",
+        "sub_three" : "MongoDB"
+    };
+    console.log( obj.sub_one, obj.sub_two, obj.sub_three );             //ReactJS NodeJS MongoDB
+</script>
+-->
+
+<!--
+<script>
+    let obj = {
+        "key1" : "value1",
+        "key2" : "value2",
+        "key3" : "value3"
+    };
+
+    //for...in loop
+    //ES6
+    for(let k in obj){
+        console.log(k);
+        console.log( obj[k] );
+        console.log( typeof k );
+    }
+</script>
+-->
+
+
+<!--
+<script>
+    let obj = {
+         sub_one : "ReactJS",
+        "sub_two" : "NodeJS",
+        "sub_three" : "MongoDB"
+    };
+    console.log( typeof obj );                              //object
+    let str = JSON.stringify(obj);
+    console.log( typeof str );                              //string
+    let obj1 = JSON.parse(str);
+    console.log( typeof obj1 );                             //object
+    console.log( Object.keys(obj) );                        //['sub_one', 'sub_two', 'sub_three']
+    console.log( Object.values(obj) );                      //['ReactJS', 'NodeJS', 'MongoDB']
+</script>
+-->
+
+
+<!--
+<script>
+    let obj1 = {
+        "key1" : "Hello_1"
+    };
+
+    let obj2 = {
+         ...obj1,
+        "key2" : "Hello_2"
+    };
+
+    console.log( obj2 );                    //{key1: 'Hello_1', key2: 'Hello_2'}
+</script>
+-->
+
+
+<!--
+<script>
+    let obj1 = {
+        "key1" : "Hello_1"
+    };
+
+    let obj2 = {
+        "key2" : "Hello_2"
+    };
+
+    let obj3 = {
+        "key3" : "Hello_3"
+    };
+
+    let obj4 = {...obj1,...obj2,...obj3};
+    console.log( obj4 );                            //{key1: 'Hello_1', key2: 'Hello_2', key3: 'Hello_3'}
+</script>
+-->
+
+
+<!--
+<script>
+    let obj = {
+               "key1":{"sub_one":"ReactJS"},
+               "key2":{"sub_two":"NodeJS"},
+               "key3":{"sub_three":"MongoDB"}
+            };
+    const { key1, key2, key3 } = obj;
+    const { sub_one } = key1;
+    console.log( sub_one );
+    const { sub_two } = key2;
+    console.log( sub_two );
+    const { sub_three } = key3;
+    console.log( sub_three );
+</script>
+-->
+
+
+<!--
+<script>
+    let arr = [
+        {"p_id":111,"p_name":"p_one","p_cost":10000},
+        {"p_id":222,"p_name":"p_two","p_cost":20000},
+        {"p_id":333,"p_name":"p_three","p_cost":30000},
+        {"p_id":444,"p_name":"p_four","p_cost":40000},
+        {"p_id":555,"p_name":"p_five","p_cost":50000}
+    ];
+
+    document.write(`
+            <table border="1"
+                   align="center"
+                   cellpadding="10px"
+                   cellspacing="10px">
+                <tr>
+                    <th>SNO</th>
+                    <th>P_ID</th>
+                    <th>P_NAME</th>
+                    <th>P_COST</th>
+                </tr>
+    `);
+     arr.forEach((element,index)=>{
+        document.write(`<tr>
+                <td>${index+1}</td>
+                <td>${element.p_id}</td>
+                <td>${element.p_name}</td>
+                <td>${element.p_cost}</td>
+            </tr>`);
+     })
+     document.write(`</table>`)
+</script>
+-->
+
+
+<!--
+    JSON Server
+    ***********
+        JSON Server, used to develop the "Rest API'S"
+
+        Ex.
+            GET
+            POST
+            PUT
+            DELETE
+            --
+            --
+            --
+
+        JSON Server, will work on only "JSON" Data
+
+        JSON Server is "light" weight server
+
+        JSON Server by default running on port no : 3000
+
+        we will test Rest API'S By Using Postman
+
+        JSON Server installation is "command" based installation
+
+        > npm install -g json-server
+
+        npm stands for node packaging manager
+
+        npm present in NodeJS
+
+        -g stands for global installation
+
+        we will load JSON data by using following command
+
+        > json-server --watch demo.json
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
