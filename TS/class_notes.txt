@@ -1,0 +1,38 @@
+variables
+*********
+    - variables are used to store the data
+
+    Ex.
+            string
+            number
+            boolean
+            ---
+            ---
+
+    - we will declare the variables with var / let / const keywords
+
+    - let and const keywords introduced in ES6
+
+    - variables should contain a-z, A-Z, 0-9, $ and _
+
+    - variables should not start with digits
+
+Syntax
+******
+var/let/const variablename:datatype = value;
+
+
+Ex.
++++
+
+var msg:string = "welcome to reactjs";
+console.log(msg);
+
+
+
+
+
+
+
+
+
