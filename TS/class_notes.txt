@@ -29,6 +29,97 @@ var msg:string = "welcome to reactjs";
 console.log(msg);
 
 
+functions
+*********
+    - particular business logic called as function
+
+    - functions are used to reuse the business logic.
+
+    - we have two types of functions
+
+            1) named functions
+
+            2) anonymous functions / arrow functions / nameless functions / lamda functions / callback functions
+
+
+    named functions
+    ***************
+
+    the function with the user defined name called as named functions
+
+    we will define named functions with "function" keyword
+
+
+Syntax
+******
+
+1) function definition
+
+2) function calling
+
+
+function definition
+*******************
+
+function functionname(param1:datatype,param2:datatype,param3:datatype,.....paramn:datatype):returntype{
+    //business logic
+}
+
+
+function calling
+****************
+
+functionname(arg1,arg2,arg3,.....arg n);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
