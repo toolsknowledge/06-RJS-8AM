@@ -58,6 +58,124 @@ fun_one(null,null);                     //[ null, null ]
 */
 
 
+/*
+    function fun_one(param1:string,param2:string="Hello_2",...param3:any):void{
+        console.log( param1, param2, param3 );
+    }
+    //fun_one();                                //Expected at least 1 arguments, but got 0.
+    fun_one("Hello_1");                         //Hello_1 Hello_2 []
+    fun_one("Hello_1",undefined,"Hello_3");     //Hello_1 Hello_2 [ 'Hello_3' ]
+    fun_one(undefined,undefined,undefined);     //undefined Hello_2 [ undefined ]
+    fun_one(null,null,null);                    //null null [ null ]               
+*/
+
+
+/*
+    function fun_one(param1?:string,param2?:string,param3?:string):void{
+        console.log(param1,param2,param3);
+    }
+    fun_one();                                      //undefined undefined undefined
+    fun_one("hello_1");                             //hello_1 undefined undefined
+    fun_one("hello_1","hello_2","hello_3");         //hello_1 hello_2 hello_3
+    fun_one(undefined,undefined,undefined);         //undefined undefined undefined
+    fun_one(null,null,null);                        //null null null
+*/
+
+/*
+function fun_one(param1:string,param2:string="Hello_2",param3?:string,...param4:any):void{
+    console.log( param1, param2, param3, param4 );
+}
+
+//fun_one();                                                //Expected at least 1 arguments, but got 0.
+fun_one("Hello_1");                                         //Hello_1 Hello_2 undefined []
+fun_one(undefined,undefined,undefined,undefined);           //undefined Hello_2 undefined [ undefined ]
+fun_one(null,null,null,null);                               //null null null [ null ]
+*/
+
+/*
+    function fun_one(param1:string="Hello_1",param2:string):void{
+        console.log(param1,param2);
+    }
+
+    fun_one(undefined,"Hello_2");                   //Hello_1 Hello_2
+*/
+
+
+//anonymous functions
+//the function without name called as "anonymous" function
+//anonymous functions also called as "arrow" functions
+//we will represent the arrow functions with "=>"
+//arrow functions introduced in "ES6"
+//arrow functions behaves like "callback" functions
+
+/*
+    syntax
+    ******
+    1) function definition
+
+    2) function calling
+
+    function definition
+    *******************
+    var/let/const variablename = (param1:datatype,param2:datatype,.....paramn:datatype):returntype=>{
+        business logic
+    }
+
+    function calling
+    ****************
+    variablename(arg1,arg2,arg3,......arg n);
+*/  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
