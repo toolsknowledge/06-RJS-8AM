@@ -72,6 +72,63 @@ function calling
 functionname(arg1,arg2,arg3,.....arg n);
 
 
+classes
+*******
+    collection of "variables" and "functions" called as "class"
+
+    we will define the class with the help of "class" keyword
+
+    we will create object to the class with the help of "new" keyword
+
+    we have three types of modifiers.
+
+            1) public
+
+            2) private
+
+            3) protected
+
+    private modifier recomended to variable
+
+    public modifier recomended to functions
+
+    we will define constructor with the help of "constructor" keyword
+
+    "this" keyword used to refer the current class members.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

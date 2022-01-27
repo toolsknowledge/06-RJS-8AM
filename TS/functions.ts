@@ -117,14 +117,142 @@ fun_one(null,null,null,null);                               //null null null [ n
 
     function definition
     *******************
-    var/let/const variablename = (param1:datatype,param2:datatype,.....paramn:datatype):returntype=>{
-        business logic
+    var/let/const variablename = (param1:datatype,param2:datatype,param3:datatype,.....paramn:datatype):returntype=>{
+        //business logic
     }
 
     function calling
     ****************
-    variablename(arg1,arg2,arg3,......arg n);
+    variablename(arg1,arg2,arg3,.....arg n);
 */  
+
+
+/*
+    let fun_one = ():string=>{
+        return "Hello";
+    }
+    console.log( fun_one() );                   //Hello
+*/
+
+
+
+/*
+    let fun_one = (param1:any,param2:any,param3:any):void=>{
+        console.log( param1, param2, param3 );
+    };
+
+    //fun_one();                                        //Expected 3 arguments, but got 0.
+    fun_one("Hello_1","Hello_2","Hello_3");             //Hello_1 Hello_2 Hello_3
+    fun_one(undefined,undefined,undefined);             //undefined undefined undefined
+    fun_one(null,null,null);                            //null null null
+*/
+
+
+/*
+    let fun_one = (param1:string):any=>console.log(param1);
+    fun_one("Hello");                                       //Hello
+*/
+
+
+
+/*
+    let networkCall = (param1:any,param2:any):void=>{
+        console.log( param1(), param2() );
+    }
+
+
+    let _successCallBack = ():any=>{
+        return "Success";
+    }
+
+    let _errorCallBack = ():any=>{
+        return "Error";
+    }
+
+
+    networkCall(_successCallBack,_errorCallBack);               //Success Error
+*/
+
+
+
+
+/*
+    let fun_one = (param1:any,param2:any):any=>{
+        console.log( param1(), param2() );
+    };
+
+    fun_one( ():string=>{ return "Hello_1" }, ():string=>{ return "Hello_2" } );
+    //Hello_1 Hello_2
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
