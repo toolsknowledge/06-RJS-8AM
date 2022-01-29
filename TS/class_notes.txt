@@ -74,29 +74,34 @@ functionname(arg1,arg2,arg3,.....arg n);
 
 classes
 *******
-    collection of "variables" and "functions" called as "class"
+   - collection of "variables" and "functions" called as class.
 
-    we will define the class with the help of "class" keyword
+   - we will define classes by using "class" keyword
 
-    we will create object to the class with the help of "new" keyword
+   - typescript supports the following modifiers.
 
-    we have three types of modifiers.
+        1) public
 
-            1) public
+        2) private
 
-            2) private
+        3) protected
 
-            3) protected
+    - private modifier recomended to variables
 
-    private modifier recomended to variable
+    - public modifier recomended to functions
 
-    public modifier recomended to functions
+    - we will define constructors by using "constructor" keyword
 
-    we will define constructor with the help of "constructor" keyword
+    - we will refer current class members with the help of "this" keyword.
 
-    "this" keyword used to refer the current class members.
+    - we will define object to the class with the "new" keyword.
 
 
+
+
+
+
+    
 
 
 
