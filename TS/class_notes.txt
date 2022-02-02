@@ -97,6 +97,104 @@ classes
     - we will define object to the class with the "new" keyword.
 
 
+modifiers
+*********
+    - typescript supports the following modifiers.
+
+        1) public
+
+        2) private
+
+        3) protected
+
+public
+******
+    public modifier applicable to "variables", "functions" and "constructor"
+
+    public members we can access by class "objects"
+
+    public members by default accessable to "child" classes
+
+    public modifier recomended to functions
+
+
+private
+*******
+    private modifier applicable to variables, functions and constructor
+
+    private members won't accessable to "child" classes
+
+    private members we can't access by using class "objects"
+
+    we can't create object to the private class constructor
+
+    private keyword is the secured
+
+    recomended modifier for variables is private
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
