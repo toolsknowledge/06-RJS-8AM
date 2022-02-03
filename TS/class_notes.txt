@@ -133,6 +133,56 @@ private
     recomended modifier for variables is private
 
 
+protected
+*********
+    protected modifier applicable to "variables", "functions" and "constructor"
+
+    protected members won't accessable with class "objects"
+
+    protected members by default "available" to child classes
+
+
+enum
+****
+    enum is the keyword used to define our own datatype
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
