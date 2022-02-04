@@ -147,6 +147,13 @@ enum
     enum is the keyword used to define our own datatype
 
 
+modules
+*******
+    collection of "modules" called as "project"
+
+    because of "modules" application "readability" increses
+
+
 
 
 
