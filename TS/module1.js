@@ -1,7 +1,6 @@
 "use strict";
 // export let var_one:string = "Hello_1";
 exports.__esModule = true;
-exports.fun_three = exports.fun_two = exports.fun_one = void 0;
 // export let sub_one:string = "Hello_1";
 // export let sub_two:string = "Hello_2";
 // export let sub_three:string = "Hello_3";
@@ -13,15 +12,40 @@ exports.fun_three = exports.fun_two = exports.fun_one = void 0;
 // }
 // let var_one:string = "hello";
 // export default var_one;
-function fun_one() {
+/*
+function fun_one():string{
     return "hello_1";
 }
-exports.fun_one = fun_one;
-function fun_two() {
+
+
+function fun_two():string{
     return "hello_2";
 }
-exports.fun_two = fun_two;
-function fun_three() {
+
+
+function fun_three():string{
     return "hello_3";
 }
-exports.fun_three = fun_three;
+
+export  {fun_one,fun_two,fun_three};
+*/
+/*
+    export default class class_one{
+        var_one:string = "Hello_1";
+        var_two:string = "Hello_2";
+        var_three:string = "Hello_3";
+    }
+*/
+/*
+    export default interface interface1{
+        var_one:string;
+        var_two:string;
+        var_three:string;
+    }
+*/
+var obj = {
+    key1: "Hello_1",
+    key2: "Hello_2",
+    key3: "Hello_3"
+};
+exports["default"] = obj;

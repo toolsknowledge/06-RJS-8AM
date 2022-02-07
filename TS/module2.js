@@ -14,5 +14,28 @@ exports.__esModule = true;
 // console.log( fun_one() );                   //hello_1
 // import var_one from "./module1";
 // console.log( var_one );                     //hello
+/*
+import { fun_one,fun_two, fun_three } from "./module1";
+console.log( fun_one(), fun_two(), fun_three() );
+//hello_1 hello_2 hello_3
+*/
+/*
+import class_one from "./module1";
+let obj:class_one = new class_one();
+console.log(
+    obj.var_one, obj.var_two, obj.var_three
+);
+//Hello_1 Hello_2 Hello_3
+*/
+/*
+    import interface1 from "./module1";
+    let obj:interface1 = {
+        var_one : "Hello_1",
+        var_two : "Hello_2",
+        var_three : "Hello_3"
+    }
+    console.log( obj.var_one, obj.var_two, obj.var_three );
+    //Hello_1 Hello_2 Hello_3
+*/
 var module1_1 = require("./module1");
-console.log((0, module1_1.fun_one)(), (0, module1_1.fun_two)(), (0, module1_1.fun_three)());
+console.log(module1_1["default"].key1, module1_1["default"].key2, module1_1["default"].key3);

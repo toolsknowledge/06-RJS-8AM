@@ -20,6 +20,7 @@
 
 
 
+/*
 function fun_one():string{
     return "hello_1";
 }
@@ -35,6 +36,65 @@ function fun_three():string{
 }
 
 export  {fun_one,fun_two,fun_three};
+*/
+
+
+/*
+    export default class class_one{
+        var_one:string = "Hello_1";
+        var_two:string = "Hello_2";
+        var_three:string = "Hello_3";
+    }
+*/
+
+
+/*
+    export default interface interface1{
+        var_one:string;
+        var_two:string;
+        var_three:string;
+    }
+*/
+
+
+let obj:any = {
+    key1 : "Hello_1",
+    key2 : "Hello_2",
+    key3 : "Hello_3"
+};
+export default obj;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

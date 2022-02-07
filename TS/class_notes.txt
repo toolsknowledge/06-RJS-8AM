@@ -154,6 +154,13 @@ modules
     because of "modules" application "readability" increses
 
 
+namespaces
+**********
+    providing the communication between "modules" and with in the "project" called as "namespaces".
+
+    namespaces also called as "internal modules"
+
+    "namespace" is the keyword, used to create the "namespaces"
 
 
 
