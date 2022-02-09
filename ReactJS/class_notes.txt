@@ -1,0 +1,474 @@
+Introduction
+************
+     - React is the library
+
+     - React is the JavaScript library
+
+     - React Released by Facebook
+
+     - React Categorized into 3 types
+
+            1) ReactJS
+
+            2) React Native
+
+            3) React BootStrap
+
+    ReactJS used to develop the web applications
+
+    React Native used to develop the mobile applications
+
+    React BootStrap used to apply the Rich UI to both web applications and mobile applications
+
+    we will develop ReactJS applications in two ways.
+
+            1) JSX
+
+            2) TSX
+
+    JSX Stands for JavaScript and XML
+
+    TSX Stands for Typescript and XML
+
+    "Babel" is the "tool", used to convert the "XML" to Equalent "JavaScript".
+
+    "Babel" is the inbuilt tool of "ReactJS".
+
+
+
+Installation of Softwares
+*************************
+1) download and install NodeJS
+
+
+    NodeJS containes following tools
+
+    1) node
+
+    2) npm
+
+    3) npx
+
+    node tool, helps to execute the "JavaScript".
+
+    npm stands for "node packaging manager"
+
+    npm helps to install the "ReactJS" Software
+
+    npx stands for node packaging runner
+
+    npx create the environment to "create react applications"
+
+
+website : https://nodejs.org/en/download/
+
+file    : node-v16.13.2-x64.msi
+
+
+
+2) install yarn tool
+
+    yarn tool, given by "Facebook".
+
+    yarn tool, used to download the "3rd party" libraries
+
+    we will install "yarn" tool by using "npm"
+
+
+    > npm install -g yarn
+
+    npm stands for "node packaging manager"
+
+    npm available in NodeJS
+
+    -g stands for global installation
+
+
+3) install create-react-app tool
+
+
+    create-react-app tool, given by the "Facebook"
+
+    create-react-app tool used to create the "react applications"
+
+    create-react-app tool is the "command based installation"
+
+    > npm install -g create-react-app
+
+
+4) install Visual Studio Code
+
+    VSCode given by "Microsoft"
+
+    VSCode used to develop the "react applications"
+
+    website : https://code.visualstudio.com/docs/?dv=win
+
+    file    : VSCodeUserSetup-x64-1.64.0.exe
+
+
+
+creating the first react application
+************************************
+
+> npx create-react-app first-app
+
+> cd first-app
+
+> yarn start
+
+default port number of react application is 3000
+
+
+
+Directory Structure of React Application
+****************************************
+
+node_modules
+++++++++++++
+    node_modules containes libraries
+
+    these libraries helps to execute the react application
+
+public/favicon.ico
+++++++++++++++++++
+    this is a default logo of reactjs
+
+
+public/index.html
++++++++++++++++++
+    this html is the "main" html file
+
+    this html is the "entry" point of react application
+
+    react starts the execution from "index.html" file
+
+    react applications are "component" based
+
+    we can create more than one component
+
+    as a react developer we can provide communication between components
+
+    as a react developer we can include one component to another component
+
+    after creating the component we must register in "index.js" file
+
+    index.js file will handover to "div" which is present in "index.html" file
+
+
+public/logo192.png
+       logo512.png
+******************
+    these logos are helps to implement the "responsive web design"
+
+    execution of webpage into multiple devices called as responsive web design.
+
+
+public/manifest.json
+********************
+    this file used to configure the mobile applications
+
+
+src/App.js
+   /App.css
+   /App.test.js
+***************
+    when ever we create the react application, automatically App Component is the default component
+
+
+src/index.css
+*************
+    here, we will define the global styles
+
+    these styles applicable to entire react project
+
+src/index.js
+************
+    this file acting as Registration file.
+
+    render() is the predefined function in ReactDOM class
+
+    render() handovers the component to div (whose id is root and present in index.html file)
+
+
+src/logo.svg
+************
+    this is default svg logo of reactjs
+
+
+src/setupTests.js
+*****************
+    used to write the unit test cases
+
+
+src/package.json
+****************
+    used to download the libraries
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
