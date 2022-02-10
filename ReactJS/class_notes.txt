@@ -207,6 +207,83 @@ src/package.json
 
 
 
+components
+**********
+    - Reusable Portion of Complex UI Called as "Component"
+
+    - As a React Developer, we can create more than "one component"
+
+    - As a React Developer, we can provide "communication" between Compponents
+
+    - we can create components in two ways
+
+        1) functional components
+
+        2) class level components
+
+
+functional components
+*********************
+    - simple function behaves like "component"
+
+
+************************************
+component-app
+            src
+              First.js
+
+              index.js
+************************************
+
+
+*******************************************
+components-app
+             src
+               Header.js
+               Header.css
+
+               Body.js
+               Body.css
+
+               Footer.js
+               Footer.css
+
+               Master.js
+
+
+              index.js
+********************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
