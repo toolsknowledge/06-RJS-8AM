@@ -1,0 +1,886 @@
+Middlewares
+***********
+
+    - maintaing common space for all components to store the data and access the data called as Middlewares
+
+    - Middlewares reduces the complexity in communication between components
+
+    - Middlewares reduces the burden on server
+
+    - we have following Middlewares
+
+            1) Redux
+
+            2) Thunk
+
+            3) Saga
+
+
+    Terminology
+    ***********
+        1) store
+
+        2) reducer
+
+        3) initialState
+
+        4) state
+
+        5) dispatch
+
+                => Action
+
+                => Payload
+
+        6) Subscribe
+
+                => state
+
+
+Ex_1:
+    create the directory
+
+    Ex.
+        Basic_Redux_Ex
+
+
+    switch to directory
+
+    > cd Basic_Redux_Ex
+
+
+    download the redux library
+
+    > yarn add redux
+
+    redux library downloads to "node_modules" folder
+
+    create the redux application
+
+    Bank.js
+
+
+
+MiniProject
+***********
+    => S3 Bucket
+
+    => MongoDB
+
+    => Middlewares   (Redux & Thunk)
+
+    => ReactJS
+
+    => NodeJS
+
+    => Cloud Deployment   (AWS Deployment)
+
+    => CI/CD Process  (Continuos Integration & Continuous Delivery)
+
+    => Unit Test Cases
+
+
+1) deploy images to s3 bucket
+
+
+    s3 bucket service provided by AWS.
+
+    we can deploy images to s3 bucket
+
+
+    bucket policy
+    *************
+    {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::redux-bucket/*"
+            ]
+        }
+    ]
+}
+
+
+    cloud images
+    ************
+    https://redux-bucket.s3.amazonaws.com/shirt1.jpg
+
+    https://redux-bucket.s3.amazonaws.com/shirt2.jpg
+
+    https://redux-bucket.s3.amazonaws.com/shirt3.jpg
+
+    https://redux-bucket.s3.amazonaws.com/pant1.jpg
+
+    https://redux-bucket.s3.amazonaws.com/pant2.jpg
+
+    https://redux-bucket.s3.amazonaws.com/pant3.jpg
+
+
+
+store above images path to MongoDB DataBase
+********************************************
+
+    - MongoDB DataBase is "NoSQL" DataBase.
+
+    - MongoDB DataBase supports "JSON"
+
+    - MongoDB DataBase by default running on Port No. "27017"
+
+    - MongoDB DataBase by default follows the "mongodb" protocol
+
+    - MongoDB DataBase provides the "cloud" the environment in the form of a "MongoDB Atlas"
+
+
+                SQL                                                 NoSQL
+**************************************************************************************************************
+Ex.
+        Oracle                                                      MongoDB
+        MySQL                                                       CassandraDB
+        SQLServer
+
+
+    Won't Supports JSON                                             Supports JSON
+
+    DataBases                                                       DataBases
+
+    tables                                                          Collections
+
+    records                                                         document
+
+    primary key                                                     _id
+**************************************************************************************************************
+
+
+
+DataBase Name : redux-middleware
+
+Collection Name : products
+
+user name  : admin
+
+Password : admin
+
+Connection URL : mongodb+srv://admin:admin@06-ng-11am.bskgx.mongodb.net/redux-middleware?retryWrites=true&w=majority
+
+
+"Note : check the DataBase Access and Network Access in MongoDB Atlas Account"
+
+
+
+NodeJS
+******
+    - NodeJS is "backend" Technology
+
+    - NodeJS used to develop "server side" applications
+
+    - we will implement NodeJS applications with the help of "JavaScript"
+
+    - NodeJS Supports the libraries / modules
+
+    1) express
+
+            express library used to develop the "rest services"
+            Ex.
+                    GET
+                    POST
+                    PUT
+                    DELETE
+                    ---
+                    ---
+                    ---
+    2) mongodb
+
+            mongodb library used to connect to "mongodb" DataBase
+
+
+    3) cors
+
+            used to enable the communication between ports
+
+
+    we will download above libraries with the help of "yarn" tool
+
+
+    above libraries downloads to "node_modules" folder in current path
+
+
+
+=> create the directory
+
+    Ex.
+            redux_server
+
+=> switch to redux_server
+
+            > cd redux_server
+
+
+=> download the libraries
+
+            1) express
+
+            2) mongodb
+
+            3) cors
+
+
+    > yarn add express mongodb cors
+
+
+
+=> implement the Node application
+
+    server.js
+
+
+=> start the node server
+
+    > node server
+
+=> test the rest api by using Postman
+
+        http://localhost:8080/products
+
+
+Integration of "backend" to "frontend" with "middleware"
+********************************************************
+
+=> create the react application
+
+    > npx create-react-app middleware-frontend
+
+
+=> switch to react application
+
+    > cd middleware-frontend
+
+
+=> download the libraries
+
+    > redux
+
+        - used to create the redux architecture
+
+    > react-redux
+
+        - used to integrate the redux architecture to react application
+
+    > redux-thunk
+
+        - used to moniter the actions
+
+    > axios
+
+        - used to make the asynchronous calls
+
+    > yarn add redux react-redux redux-thunk axios
+
+
+   => constants
+
+   => actions
+   
+   => reducer
+
+   => store
+
+   => component
+
+   *************************************
+   src
+     constants
+          productsConstants.js
+   *************************************
+        finally "GET_PRODUCTS", "GET_PRODUCTS_SUCCESS" and "GET_PRODUCTS_FAIL" constants are ready
+
+
+    ****************************************
+    src
+       actions  
+            productsActions.js
+    ***************************************
+
+    ***************************************
+    src
+       reducer
+          productsReducer.js
+    **************************************
+
+
+    deploy reducer to store, and apply the "thunk" middleware, and makes availability of "store" to "component"
+    ***********************************************************************************************************
+
+    index.js
+
+
+    perform dispatch and subscribe from component
+    *********************************************
+    App.js
+
+Spring Boot Integration With ReactJS
+************************************
+1) Execute Spring Boot Application with following Command
+
+        > java -jar Mini-Project-0.0.1-SNAPSHOT.jar
+
+2) test the following rest api by using Postman
+
+        > http://localhost:5000/api/v1/products
+
+3) create the react application
+
+        > npx create-react-app springboot-integration
+
+4) switch to react application
+
+        > cd springboot-integration
+
+5) download libraries
+
+        => redux
+
+        => react-redux
+
+        => redux-thunk
+
+        => axios
+
+        > yarn add redux react-redux redux-thunk axios
+
+
+6) implement the redux architecture
+
+        => constants
+                finally following constants are ready
+
+                        1) GET_PRODUCTS
+
+                        2) GET_PRODUCTS_SUCCESS
+
+                        3) GET_PRODUCTS_FAIL
+
+        => actions
+            finally "productsActions" are ready
+
+        => reducer
+            finally "productsReducer" is ready
+
+        => store
+
+        => component
+
+
+Login Application with State Management
+***************************************
+
+1) make the DataBase ready
+
+    DataBase Name : redux-middleware
+
+    Collection Name : login_details
+
+    User Name : admin
+
+    Password : admin
+
+    Connection URL : mongodb+srv://admin:admin@06-ng-11am.bskgx.mongodb.net/redux-middleware?retryWrites=true&w=majority
+
+
+2) create the login_server directory
+
+
+3) switch to login_server
+
+        > cd login_server
+
+
+4) download node modules
+
+        => express
+
+        => cors
+
+        => mongodb
+
+        > yarn add express cors mongodb
+
+5) implement the node server
+
+        server.js
+
+
+6) start the node server
+
+        > node server
+
+7) test the rest api by using Postman
+
+        => http://localhost:8080/login    (POST)
+
+8) create the react application
+
+        > npx create-react-app login-app
+
+9) switch to the react application
+
+        > cd login-app
+
+10) download the node modules
+
+        => redux
+
+        => react-redux
+
+        => redux-thunk
+
+        => axios
+
+
+        > yarn add redux react-redux redux-thunk axios
+
+
+11) implement the redux architecture
+
+
+        => constants
+
+        => actions
+
+        => reducer
+
+        => store
+
+        => component
+
+    *************************************************
+    login-app
+            src
+              constants
+                   loginConstants.js
+    *************************************************
+
+    finally following constants are ready
+
+    1) LOGIN
+
+    2) LOGIN_SUCCESS
+
+    3) LOGIN_FAIL
+
+
+
+    *******************************************************
+    login-app
+            src
+              actions
+                  loginActions.js
+    *******************************************************
+
+            finally "loginActions" are ready
+
+
+    *******************************************************
+    login-app
+            src
+              reducer
+                 loginReducer.js
+    ******************************************************
+
+            finally "loginReducer" is ready
+
+
+    create the store
+
+    index.js
+
+
+    create the App Component
+
+
+
+
+
+Saga Middleware
+***************
+        Saga Middleware manipulates the actions
+
+
+1) create the react application
+
+        > npx create-react-app saga-app
+
+
+2) switch to react application
+
+        > cd saga-app
+
+3) download the middleware libraries
+
+        > redux
+
+        > react-redux
+
+        > redux-saga
+
+
+        > yarn add redux react-redux redux-saga
+
+
+4) create the constants
+
+        **************************************
+        saga-app
+                src
+                   constants
+                         bankConstants.js
+        *************************************
+
+        finally "WITHDRAW" constant is ready
+
+
+
+5) manipulate the action
+
+        **********************************************
+        saga-app
+               src
+                 saga
+                    bankSaga.js
+        **********************************************
+
+
+6) create the reducer
+
+        *******************************************
+        saga-app
+               src
+                  reducer
+                        sagaReducer.js
+        ********************************************
+
+                finally "sagaReducer" is ready
+
+
+
+7) create the store
+
+        index.js
+
+8) create the App
+
+
+AWS Deployment
+**************
+1) backend deployment
+
+=> push backend code GitHub Repository
+
+=> create the "application" in AWS Server
+
+                ElasticBeanStalk
+
+=> link GitHub Repository to ElasticBeanStalk
+
+                CodePipeline
+
+=> get the cloud url from ElasticBeanStalk
+
+        http://reduxserver-env.eba-rfxdddfu.us-east-1.elasticbeanstalk.com/products
+
+
+
+frontend deployment
+*******************
+
+=> configure the cloud url to react application
+
+
+=> install aws cli tool
+
+        aws cli tool, used to push react application to aws server
+
+        website : https://aws.amazon.com/cli/
+
+        file    : AWSCLIV2.msi
+
+=> prepare production build
+
+        > npm run build
+
+=> create the s3 bucket
+
+                Cloud URL : http://reduxbucketex.s3-website-us-east-1.amazonaws.com
+
+Bucket policy
+*************
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::reduxbucketex/*"
+            ]
+        }
+    ]
+}
+
+
+=> create secuirity credentials to our application
+
+                IAM
+
+
+=> modify the package.json file
+
+        "deploy": "aws s3 cp --recursive ./build s3://reduxbucketex"
+
+=> Execute the following commands
+
+        > aws configure
+
+        > npm run build
+
+        > npm run deploy
+
+
+=> test the cloud url
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

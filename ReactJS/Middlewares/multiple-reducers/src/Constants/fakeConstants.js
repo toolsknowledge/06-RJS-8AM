@@ -1,0 +1,3 @@
+export const FAKE_DATA = "FAKE_DATA";
+export const FAKE_DATA_SUCCESS = "FAKE_DATA_SUCCESS";
+export const FAKE_DATA_FAIL = "FAKE_DATA_FAIL";
