@@ -1,0 +1,16 @@
+Single Page Applications
+************************
+    loading one component to another component without refreshing the whole webpage called as Single Page Application
+
+    Navigation Between components in Single Page Applications called as routing
+
+    react-router-dom is the library helps to implement Single Page Applications
+
+    current version of react-router-dom is v6
+
+    we will download above module with the help of yarn tool
+
+    > yarn add react-router-dom@6
+
+
+
